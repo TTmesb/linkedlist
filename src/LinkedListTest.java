@@ -45,6 +45,7 @@ public class LinkedListTest {
         LinkedList l = new LinkedList();
         l.addLast(new Node("Test",null));
         l.addLast(new Node("Another test",null));
+
         assertEquals("Another test", l.first.getNext().getData());
     }
 
