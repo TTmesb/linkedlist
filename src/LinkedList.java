@@ -9,12 +9,13 @@ import org.junit.Test;
  */
 public class LinkedList {
     Node first;
-
+    private int count;
     /**
      * Constructor to create an empty list.
      */
     public LinkedList() {
         first = null;
+        count = 0;
     }
 
     /**
@@ -26,9 +27,13 @@ public class LinkedList {
     public void addLast(Node newNode) { //first = (new Node("Test",null)); , funkar för "addLastShouldWorkProperly"
         if(first == null){
             first = newNode;
+            count++;
         } else {
             first.next = newNode;
+
         }
+
+
     }
     /**
      * Removes and returns the first element of the list. Check if the list is empty and return null in that case
