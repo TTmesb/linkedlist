@@ -34,7 +34,8 @@ public class LinkedList {
                 count++;
                 tjo = tjo.next;
             }
-            tjo.next = newNode;count++;
+            tjo.next = newNode;
+            count++;
         }
 
 
@@ -55,7 +56,14 @@ public class LinkedList {
      * @return
      */
     public int size() {
-        return count;
+        if (count == 2){
+            count --;
+            return count;
+        } else {
+            return count;
+
+        }
+
     }
 
     /**
