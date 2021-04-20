@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 /**
  * Linked list to be used as a queue. Only needs addLast and removeFirst (enqueue and dequeue) together with
  * size() and isEmpty().
@@ -21,10 +23,13 @@ public class LinkedList {
      *
      * @param newNode
      */
-    public void addLast(Node newNode){
-        first = newNode;
-}
-
+    public void addLast(Node newNode) { //first = (new Node("Test",null)); , funkar för "addLastShouldWorkProperly"
+        if(first == null){
+            first = newNode;
+        } else {
+            first.next = newNode;
+        }
+    }
     /**
      * Removes and returns the first element of the list. Check if the list is empty and return null in that case
      * (bad practice, should throw an Exception)

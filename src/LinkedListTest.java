@@ -35,8 +35,8 @@ public class LinkedListTest {
     @Test
     public void addLastShouldWorkProperly() {
         LinkedList l = new LinkedList();
-        l.addLast(new Node("Test",null));
-        l.addLast(new Node("Another test",null));
+        l.addLast(new Node("Test",null)); //        l.addLast(new Node("Another test",null));
+        l.addLast(new Node("Another test",null)); //        l.addLast(new Node("Test",null));
         assertEquals("Test", l.first.getData());
     }
 
