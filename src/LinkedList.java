@@ -29,8 +29,12 @@ public class LinkedList {
             first = newNode;
             count++;
         } else {
-            first.next = newNode;
-
+           Node tjo = first;
+            while(tjo.next != null){
+                count++;
+                tjo = tjo.next;
+            }
+            tjo.next = newNode;count++;
         }
 
 
@@ -51,7 +55,7 @@ public class LinkedList {
      * @return
      */
     public int size() {
-        return 0;
+        return count;
     }
 
     /**
