@@ -47,7 +47,7 @@ public class LinkedList {
      */
     public Node removeFirst() {
         count--;
-        first.getData();
+        first.  getData();
         return first;
     }
 
