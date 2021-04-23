@@ -46,7 +46,9 @@ public class LinkedList {
      * @return
      */
     public Node removeFirst() {
-        return null;
+        count--;
+        first.getData();
+        return first;
     }
 
     /**
@@ -56,16 +58,8 @@ public class LinkedList {
      * @return
      */
     public int size() {
-        if (count == 2){
-            count --;
             return count;
-        } else {
-            return count;
-
         }
-
-    }
-
     /**
      * returns true if the queue is empty.
      * @return
